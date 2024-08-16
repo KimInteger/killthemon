@@ -1,3 +1,5 @@
 /node_modules
 
 /menv
+
+/__pycache__/
