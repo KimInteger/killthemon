@@ -32,6 +32,7 @@ async def hello() :
 @app.get("/dist/index.bundle.js")
 async def getdist() :
     try : 
+        logger.info("serving bundle.js")
         return FileResponse(path=bundle_js_path, media_type="application/javascript")
     except Exception as e:
         logger.error(f"Error serving index.html : {str(e)}")
