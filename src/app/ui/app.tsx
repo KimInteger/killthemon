@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PlayerSection from './player/playerSection';
+import MonsterSection from './Monster/monsterSection';
 
 const App: React.FC = () => {
   const [player, setPlayer] = useState({
@@ -25,6 +26,7 @@ const App: React.FC = () => {
     <>
       <h1>몬스터를 죽여라!</h1>
       <PlayerSection player={player} attack={attack} />
+      <MonsterSection monster={monster} />
     </>
   );
 };
