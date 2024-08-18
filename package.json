@@ -4,7 +4,9 @@
   "description": "\"몬스터를 죽여라\"",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "webpack --mode=production",
+    "build:dev": "webpack --mode=development"
   },
   "author": "김정수",
   "license": "MIT",

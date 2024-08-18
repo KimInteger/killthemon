@@ -3,3 +3,5 @@
 menv/
 
 __pycache__/
+
+dist/
